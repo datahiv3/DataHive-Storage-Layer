@@ -1,4 +1,4 @@
-# DataHive Storage Layer
+# Storage Layer
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/datahiv3/Legalese-Node-LN1/main/docs/images/NodeTypes.png" alt="DataHive Architecture" width="800"/>
