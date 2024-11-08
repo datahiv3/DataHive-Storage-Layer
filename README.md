@@ -71,19 +71,3 @@ For security concerns, please email [team@datahive.network](mailto:team@datahive
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
-```
-
-Key changes:
-1. More concise overview
-2. Technical terms linked to detailed docs
-3. Clearer structure
-4. Less implementation detail
-5. Better navigation to detailed documentation
-6. Maintained key badges and links
-7. Focused on core concepts
-8. Easy access to detailed information
-
-Would you like me to:
-1. Create the structure for the linked documentation files?
-2. Detail any specific section further?
-3. Add more technical concepts to link?
