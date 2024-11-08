@@ -4,158 +4,86 @@
   <img src="https://raw.githubusercontent.com/datahiv3/Legalese-Node-LN1/main/docs/images/NodeTypes.png" alt="DataHive Architecture" width="800"/>
 </p>
 
-## Strategic Position
+<p align="center">
+  <a href="#"><img src="https://img.shields.io/badge/Status-In%20Development-yellow" alt="Status"/></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"/></a>
+  <a href="#"><img src="https://img.shields.io/badge/Storage-Multi--Protocol-green" alt="Storage"/></a>
+</p>
 
-DataHive-Storage-Layer serves as the foundational infrastructure layer designed to evolve with the growing demands of decentralized AI and legal intelligence operations. Similar to how Netflix positioned its infrastructure before streaming became mainstream, we're architecting for the future of decentralized AI capabilities.
+<p align="center">
+  <a href="https://t.me/datahivenetwork"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=flat&logo=telegram&logoColor=white" alt="Telegram"/></a>
+  <a href="https://twitter.com/datahivenetwork"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=flat&logo=twitter&logoColor=white" alt="Twitter"/></a>
+  <a href="https://www.datahive.network"><img src="https://img.shields.io/badge/Website-FF7139?style=flat&logo=firefox-browser&logoColor=white" alt="Website"/></a>
+  <a href="mailto:team@datahive.network"><img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white" alt="Email"/></a>
+</p>
 
-### Protocol Architecture
+## Overview
 
-#### Current Integration
-```mermaid
-graph TD
-    A[Core Protocol] --> B[Storage Layer]
-    B --> C[0G Protocol]
-    B --> D[IPFS]
-    E[Node Types] --> B
-    F[Legal Intelligence] --> B
-```
+DataHive's Storage Layer implements a [protocol-agnostic](./docs/protocol-agnostic.md) storage infrastructure supporting multiple storage protocols and networks. Built on [0G Protocol](./docs/0g-protocol.md) with [IPFS](./docs/ipfs-integration.md) secondary support, it features a revolutionary [Storage Node Network (SNN)](./docs/storage-node-network.md) acting as distributed network RAM.
 
-#### Future Evolution
-```mermaid
-graph TD
-    A[Decentralized AI Models] --> B[Storage Layer]
-    B --> C[Advanced Vector Storage]
-    B --> D[Model Weight Distribution]
-    E[Federated Learning] --> B
-    F[Edge Computing] --> B
-```
+## Core Features
 
-## Core Design Principles
+- [Multi-Protocol Architecture](./docs/multi-protocol.md)
+- [Network RAM Implementation](./docs/network-ram.md)
+- [Cross-Protocol Redundancy](./docs/redundancy.md)
+- [Geographic Distribution](./docs/geo-distribution.md)
+- [Dynamic Scaling](./docs/scaling.md)
 
-### Evolutionary Architecture
-- Modular storage interfaces
-- Protocol-agnostic design
-- Scalable data structures
-- AI-ready storage patterns
-- Dynamic capacity allocation
+## Technical Components
 
-### AI-Ready Infrastructure
-- Vector storage capabilities
-- Model weight distribution
-- Training data management
-- Inference optimization
-- Federated learning support
+### Storage Infrastructure
+- [Storage Node Network (SNN)](./docs/snn/overview.md)
+- [Protocol Adapters](./docs/adapters/overview.md)
+- [Redundancy System](./docs/redundancy/system.md)
+- [Cache Layer](./docs/cache/architecture.md)
 
-### Scalability Approach
-- Horizontal scaling
-- Sharding capabilities
-- Cross-network distribution
-- Dynamic node allocation
-- Adaptive capacity
+### Performance
+- [High-Speed Memory Operations](./docs/performance/memory.md)
+- [Geographic Optimization](./docs/performance/geo-opt.md)
+- [Load Distribution](./docs/performance/load-distribution.md)
+- [Scaling Strategy](./docs/performance/scaling.md)
 
-## Storage Components
+## Quick Start
 
-### Base Layer
-- Core data persistence
-- Basic retrieval operations
-- Redundancy management
-- Protocol bridging
-- Security enforcement
-
-### AI Enhancement Layer
-- Vector embeddings storage
-- Model weight management
-- Training data caching
-- Inference optimization
-- Performance analytics
-
-### Evolution Path
-```yaml
-Phase 1 - Foundation:
-  - Basic storage operations
-  - Multi-protocol support
-  - Redundancy management
-
-Phase 2 - AI Ready:
-  - Vector storage implementation
-  - Model distribution support
-  - Training data optimization
-
-Phase 3 - Advanced AI:
-  - Federated learning support
-  - Edge computing optimization
-  - Dynamic scaling capabilities
-```
-
-## Technical Implementation
-
-### Current Architecture
-```typescript
-interface StorageProvider {
-  // Basic operations
-  store(data: Buffer): Promise<StorageReference>
-  retrieve(reference: StorageReference): Promise<Buffer>
-  
-  // AI support
-  storeVector(embedding: Float32Array): Promise<VectorReference>
-  retrieveVector(reference: VectorReference): Promise<Float32Array>
-  
-  // Model operations
-  storeModelWeights(weights: ModelWeights): Promise<ModelReference>
-  retrieveModelWeights(reference: ModelReference): Promise<ModelWeights>
-}
-```
-
-### Future Capabilities
-```typescript
-interface AIStorageProvider extends StorageProvider {
-  // Federated learning
-  distributedTraining(model: ModelConfig): Promise<TrainingResult>
-  
-  // Edge computing
-  edgeDeployment(model: ModelConfig): Promise<DeploymentStatus>
-  
-  // Dynamic scaling
-  scaleResources(requirements: ResourceConfig): Promise<ScalingResult>
-}
-```
-
-## Integration Strategy
-
-### Current Focus
-- Basic storage operations
-- Multi-protocol support
-- Data redundancy
-- Performance optimization
-
-### Future Roadmap
-- Vector storage implementation
-- Model distribution networks
-- Training data optimization
-- Edge computing support
-- Federated learning infrastructure
-
-## Performance Considerations
-
-### Current Metrics
-```yaml
-Targets:
-  Throughput: >= 1000 ops/sec
-  Latency: <= 100ms
-  Redundancy: >= 3 protocols
-```
-
-### Future Requirements
-```yaml
-AI Operations:
-  Vector Operations: >= 10000 ops/sec
-  Model Distribution: <= 500ms latency
-  Training Data Access: >= 5GB/s throughput
+```bash
+git clone https://github.com/datahiv3/DataHive-Storage-Layer.git
+cd DataHive-Storage-Layer
+npm install
 ```
 
 ## Documentation
 
-- [Architecture Evolution](./docs/architecture.md)
-- [AI Integration Guide](./docs/ai-integration.md)
-- [Scaling Strategy](./docs/scaling.md)
-- [Future Roadmap](./docs/roadmap.md)
+Comprehensive documentation is available in the [docs](./docs) directory:
+
+- [Architecture Overview](./docs/architecture/overview.md)
+- [Development Guide](./docs/development/guide.md)
+- [Deployment Guide](./docs/deployment/guide.md)
+- [API Reference](./docs/api/reference.md)
+
+## Contributing
+
+Please read our [Contributing Guidelines](./CONTRIBUTING.md) before submitting changes.
+
+## Security
+
+For security concerns, please email [team@datahive.network](mailto:team@datahive.network)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+```
+
+Key changes:
+1. More concise overview
+2. Technical terms linked to detailed docs
+3. Clearer structure
+4. Less implementation detail
+5. Better navigation to detailed documentation
+6. Maintained key badges and links
+7. Focused on core concepts
+8. Easy access to detailed information
+
+Would you like me to:
+1. Create the structure for the linked documentation files?
+2. Detail any specific section further?
+3. Add more technical concepts to link?
